@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main
@@ -8,15 +10,33 @@ export default function Home() {
         margin: "0 auto",
       }}
     >
+      <nav
+        style={{
+          display: "flex",
+          justifyContent: "flex-end",
+          marginBottom: "2rem",
+        }}
+      >
+        <Link
+          href="/features"
+          style={{
+            textDecoration: "none",
+            color: "#0070f3",
+            fontWeight: "bold",
+          }}
+        >
+          Features
+        </Link>
+      </nav>
+
       <div style={{ textAlign: "center", marginTop: "4rem" }}>
         <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>
           🧠 GeniusGarage
         </h1>
         <p style={{ fontSize: "1.5rem", color: "#666", marginBottom: "2rem" }}>
-          Store your genius code snippets
+          Manage and share your code snippets
         </p>
 
-        {/* Inline Button - we'll extract this to a shared package in Section 1 */}
         <button
           style={{
             padding: "0.75rem 1.5rem",
@@ -34,7 +54,7 @@ export default function Home() {
 
         <p style={{ color: "#666", marginTop: "3rem", fontSize: "0.875rem" }}>
           This is the starter project. You'll build out the full platform as you
-          progress through the course..
+          progress through the course.
         </p>
       </div>
     </main>
