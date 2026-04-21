@@ -30,6 +30,11 @@ pnpm dev
 
 3. Open [http://localhost:3000](http://localhost:3000) to see the marketing site.
 
+## Deployed apps
+
+- Marketing Site: https://geniusgarage-ju.vercel.app
+- Snippet Manager: https://geniusgarage-app-ju.vercel.app
+
 ## Learn More
 
 - [Turborepo Documentation](https://turbo.build/repo/docs)
